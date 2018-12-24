@@ -1052,4 +1052,7 @@
     <!-- Disable this by default, since it's actually using the QC FOSS algorithm for
          OLED displays and can cause a bit of discoloration. Reinvestigate after tuning -->
     <bool name="config_defaultCABC">false</bool>
+
+    <!-- Enable video pause workaround when enabling/disabling the camera. -->
+    <bool name="config_useVideoPauseWorkaround">true</bool>
 </resources>
