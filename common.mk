@@ -282,7 +282,9 @@ $(call add-product-dex-preopt-module-config,com.oneplus.keyhandler,disable)
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,${LOCAL_PATH}/prebuilt/usr,$(TARGET_COPY_OUT_VENDOR)/usr)
+    $(LOCAL_PATH)/keylayout/fpc1020.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/fpc1020.kl \
+    $(LOCAL_PATH)/keylayout/synaptics.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics.kl \
+    $(LOCAL_PATH)/keylayout/synaptics.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_s3320.kl
 
 # Keymaster
 PRODUCT_PACKAGES += \
