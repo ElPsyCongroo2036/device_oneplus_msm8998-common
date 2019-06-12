@@ -139,8 +139,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     camera.device@1.0-impl \
-    camera.device@3.2-impl \
-    GoogleCameraMod-oneplus5
+    camera.device@3.2-impl
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
@@ -207,6 +206,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
+
+# GoogleCamera
+$(call inherit-product, packages/apps/GoogleCameraMod/oneplus-msm8998/config.mk)
 
 # GPS / Location
 PRODUCT_PACKAGES += \
