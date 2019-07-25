@@ -264,6 +264,7 @@ PRODUCT_PACKAGES += \
     init.qti.qseecomd.sh \
     init.target.rc \
     init.target.performance.rc \
+    init.target.displaymodes.rc \
     init.custom.rc \
     ueventd.qcom.rc
 
