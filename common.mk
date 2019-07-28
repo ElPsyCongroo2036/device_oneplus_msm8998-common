@@ -211,9 +211,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
-# GoogleCamera
-$(call inherit-product, packages/apps/GoogleCameraMod/oneplus-msm8998/config.mk)
-
 # GPS / Location
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl-qti \
@@ -383,7 +380,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OnePlusCamera \
     OnePlusGallery \
-    OnePlusCameraService
+    OnePlusCameraService \
+    GCam62Urnyx05_oneplus-msm8998
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/lib/libopcameralib-em.so:system/lib/libopcameralib-em.so  \
